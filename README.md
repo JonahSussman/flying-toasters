@@ -29,5 +29,3 @@ Note: the makefile assumes that mingw is installed in its *default location*, an
 ## 📜 Licence
 
 This software is released under the MIT License. See the LICENSE file for more information.
-
-ffmpeg -i input.mkv -vf "fps=30,scale=640:-1:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" -loop 0 output.gif
